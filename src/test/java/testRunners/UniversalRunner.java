@@ -14,7 +14,7 @@ import java.io.File;
 @RunWith(Cucumber.class)
 @CucumberOptions(
         // Here some tags can be set, for example, tags = {"@Example", "~@ignore"},
-        tags = {"@Team2, @Team2A"},
+        tags = {"@Team21"},
         plugin = {"html:target/cucumber", "json:target/cucumber.json"},
         features = {"src/test/resources/features/"},
         glue = {"stepDefinitions"}

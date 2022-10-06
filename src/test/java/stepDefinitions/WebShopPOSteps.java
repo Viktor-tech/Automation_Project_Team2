@@ -63,11 +63,16 @@ public class WebShopPOSteps extends GeneralSteps {
     }
 
     @And("^I open wishlist page$")
-    public void iOpenWishlistPage() throws InterruptedException {
+    public void iOpenWishlistPage() {
         webShopHomePagePO.wishlistPageLinkBtn.click();
-        Thread.sleep(1000);
-        assertEquals("http://www.demoshop24.com/index.php?route=account/wishlist", driver.getCurrentUrl());
+        //assertEquals("http://www.demoshop24.com/index.php?route=account/wishlist", driver.getCurrentUrl());
 
+    }
+
+    @And("^I see that url contains next path: \"([^\"]*)\"$")
+    public void testSTep(String pathExpected) {
+        String currentUrl = driver.getCurrentUrl();
+        assertTrue(currentUrl.contains(pathExpected));
     }
 
     @Then("^I see previously selected Apple Cinema product in wishlist$")

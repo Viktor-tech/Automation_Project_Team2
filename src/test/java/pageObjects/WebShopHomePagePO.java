@@ -30,7 +30,7 @@ public class WebShopHomePagePO extends Page {
     @FindBy(how = How.XPATH, using = "//div[contains(text(),'Success')]")
     public WebElement successMsg;
 
-    @FindBy(how = How.XPATH, using = "//*[contains(@id, 'wishlist-total') and contains(@title, 'Wish List')]")
+    @FindBy(how = How.CSS, using = "#wishlist-total")
     public WebElement wishlistPageLinkBtn;
 
     @FindBy(how = How.XPATH, using = "//*[contains(@title, 'Shopping Cart')]")

@@ -20,10 +20,10 @@ public class WebShopWishlistPagePO extends Page {
     @FindBy(how = How.XPATH, using = "//*[@class='table-responsive']//*[contains(text(),'Samsung')]")
     public WebElement samsungTabletItem;
 
-    @FindBy(how = How.CSS, using = "#content > div.table-responsive > table > tbody > tr > td:nth-child(6) > a")
+    @FindBy(how = How.CSS, using = ".btn.btn-danger")
     public WebElement removeFirstItemFromWishListBtn;
 
-    @FindBy(how = How.XPATH, using = "//*[@type='button' and @class='btn btn-primary']")
+    @FindBy(how = How.CSS, using = "[data-original-title=\"Add to Cart\"]")
     public WebElement moveToCartFirstItemFromWishListBtn;
 
 

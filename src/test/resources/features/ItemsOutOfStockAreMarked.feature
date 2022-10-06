@@ -1,4 +1,4 @@
-@Team2
+@Team21
 Feature: Items That are out of stock - should be marked with *** and there should be notice in red
 
   Scenario: Item that is out of stock marked with *** and red text
